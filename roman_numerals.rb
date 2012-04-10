@@ -4,6 +4,8 @@ class Roman_numerals
 
 		if cadena == "IV"
 			return 4
+		elsif cadena == "IX"
+			return 9
 		end
 
 		cadena.each_char do |r|
