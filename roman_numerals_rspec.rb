@@ -42,7 +42,20 @@ describe Roman_numerals do
 		@a.rom_to_num("IX").should eq(9)
 	end
 
-	it "Si viene el valor X debe devolver 10" do
+	it "Si viene el valor > X debe devolver > 10" do
 		@a.rom_to_num("X").should eq(10)
+		@a.rom_to_num("XI").should eq(11)
+		@a.rom_to_num("XII").should eq(12)
+		@a.rom_to_num("XIII").should eq(13)
+	end
+
+	it "Si viene el valor XIV debe devolver 14" do
+		@a.rom_to_num("XIV").should eq(14)
+		@a.rom_to_num("XV").should eq(15)
+		@a.rom_to_num("XVI").should eq(16)
+		@a.rom_to_num("XVII").should eq(17)
+		@a.rom_to_num("XVIII").should eq(18)
+		@a.rom_to_num("XIX").should eq(19)
+		@a.rom_to_num("XX").should eq(20)
 	end
 end
