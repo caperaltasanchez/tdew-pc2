@@ -9,9 +9,11 @@ class Roman_numerals
 		end
 
 		cadena.each_char do |r|
-			if r == "V"
-				retorno+=5
-			else
+			if r == "X"
+				retorno += 10
+			elsif r == "V"
+				retorno += 5
+			else r == "I"
 				retorno += 1
 			end
 		end
