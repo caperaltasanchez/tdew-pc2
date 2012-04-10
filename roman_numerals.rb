@@ -7,7 +7,11 @@ class Roman_numerals
 		end
 
 		cadena.each_char do |r|
-			retorno += 1
+			if r == "V"
+				retorno+=5
+			else
+				retorno += 1
+			end
 		end
 		retorno
 	end
