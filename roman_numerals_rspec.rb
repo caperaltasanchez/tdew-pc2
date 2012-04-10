@@ -1,4 +1,5 @@
 require 'rspec'
+require File.dirname(__FILE__) + "/roman_numerals.rb"
 
 describe Roman_numerals do 
 	it "Si viene el valor I debe devolver 1" do
