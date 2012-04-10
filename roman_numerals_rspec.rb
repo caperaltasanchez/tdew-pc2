@@ -23,7 +23,10 @@ describe Roman_numerals do
 	end
 
 	it "Si viene el valor V debe devolver 5" do
-		
 		@a.rom_to_num("V").should eq(5)
+	end
+
+	it "Si viene el valor VI debe devolver 6" do
+		@a.rom_to_num("VI").should eq(6)
 	end
 end
