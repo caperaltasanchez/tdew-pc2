@@ -69,4 +69,8 @@ describe Roman_numerals do
 		@a.rom_to_num("XLIX").should eq(49)
 		@a.rom_to_num("L").should eq(50)
 	end
+
+	it "Si viene el valor XIV debe devolver 89" do
+		@a.rom_to_num("LXXXIX").should eq(89)
+	end
 end
