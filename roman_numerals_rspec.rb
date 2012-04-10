@@ -58,4 +58,15 @@ describe Roman_numerals do
 		@a.rom_to_num("XIX").should eq(19)
 		@a.rom_to_num("XX").should eq(20)
 	end
+
+	it "Si viene el valor XIV debe devolver 50" do
+		@a.rom_to_num("XXX").should eq(30)
+		@a.rom_to_num("XXXI").should eq(31)
+		@a.rom_to_num("XXXV").should eq(35)
+		@a.rom_to_num("XXXIX").should eq(39)
+		@a.rom_to_num("XL").should eq(40)
+		@a.rom_to_num("XLV").should eq(45)
+		@a.rom_to_num("XLIX").should eq(49)
+		@a.rom_to_num("L").should eq(50)
+	end
 end

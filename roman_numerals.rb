@@ -3,7 +3,13 @@ class Roman_numerals
 		retorno = 0
 		tmp = 1000
 		cadena.each_char do |r|
-			if r == "X"
+			if r == "L"
+				retorno += 50
+				if tmp < 50
+					retorno -= tmp*2
+				end
+				tmp = 50
+			elsif r == "X"
 				retorno += 10
 				if tmp < 10
 					retorno -= tmp*2
