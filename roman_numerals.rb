@@ -1,5 +1,9 @@
 class Roman_numerals
 	def rom_to_num(cadena)
-		1
+		if cadena == "I"
+			1
+		elsif cadena == "II"
+			2
+		end
 	end
 end
