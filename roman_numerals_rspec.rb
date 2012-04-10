@@ -13,4 +13,8 @@ describe Roman_numerals do
 	it "Si viene el valor II debe devolver 2" do
 		@a.rom_to_num("II").should eq(2)
 	end
+
+	it "Si viene el valor III debe devolver 3" do
+		@a.rom_to_num("III").should eq(3)
+	end
 end
